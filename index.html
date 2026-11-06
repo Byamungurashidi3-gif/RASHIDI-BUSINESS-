@@ -1,5 +1,5 @@
-TYPE html>
-< !DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -8,7 +8,9 @@ TYPE html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RASHIDI BUSINESS</title>
+<meta name="description" content="RASHIDI BUSINESS, votre boutique en ligne.">
+
+<title>RASHIDI BUSINESS | Boutique en ligne</title>
 
 <style>
 
@@ -26,6 +28,568 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background: #f5f5f5;
+    background: #f4f4f4;
 
     color: #222;
+
+}
+
+header {
+
+    background: #111;
+
+    color: white;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+}
+
+header h1 {
+
+    color: #f5b400;
+
+    font-size: 30px;
+
+}
+
+header p {
+
+    margin-top: 8px;
+
+}
+
+nav {
+
+    background: #222;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    padding: 15px;
+
+    gap: 20px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+.hero {
+
+    background: linear-gradient(135deg, #111, #555);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 20px;
+
+}
+
+.hero h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+.hero p {
+
+    margin-bottom: 25px;
+
+}
+
+.btn {
+
+    background: #f5b400;
+
+    color: #111;
+
+    padding: 13px 24px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin: 40px 0 25px;
+
+    font-size: 27px;
+
+}
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+.product {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+
+}
+
+.product img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+.product h3 {
+
+    margin: 15px 0 8px;
+
+}
+
+.product p {
+
+    margin-bottom: 12px;
+
+}
+
+.price {
+
+    color: #b47d00;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+}
+
+.product button {
+
+    background: #111;
+
+    color: white;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    width: 100%;
+
+}
+
+.product button:hover {
+
+    background: #b47d00;
+
+}
+
+.cart {
+
+    background: white;
+
+    max-width: 700px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+}
+
+.cart-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin: 12px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 10px;
+
+}
+
+.cart-total {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin: 20px 0;
+
+}
+
+.whatsapp {
+
+    background: #159447;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+.contact {
+
+    text-align: center;
+
+    padding: 35px 15px;
+
+    line-height: 1.8;
+
+}
+
+footer {
+
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+}
+
+@media (max-width: 500px) {
+
+    .hero h2 {
+
+        font-size: 25px;
+
+    }
+
+    nav {
+
+        gap: 12px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>RASHIDI BUSINESS</h1>
+
+    <p>Votre satisfaction, notre priorité !</p>
+
+</header>
+
+<nav>
+
+    <a href="#accueil">Accueil</a>
+
+    <a href="#produits">Produits</a>
+
+    <a href="#panier">Mon panier</a>
+
+    <a href="#contact">Contact</a>
+
+</nav>
+
+<section class="hero" id="accueil">
+
+    <h2>BIENVENUE CHEZ RASHIDI BUSINESS</h2>
+
+    <p>Découvrez nos produits et commandez facilement en ligne.</p>
+
+    <a href="#produits" class="btn">Découvrir nos produits</a>
+
+</section>
+
+<h2 class="section-title" id="produits">NOS PRODUITS</h2>
+
+<section class="products">
+
+    <article class="product">
+
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Chaussures sport">
+
+        <h3>Chaussures sport</h3>
+
+        <p>Confort et élégance.</p>
+
+        <p class="price">75 000 FBu</p>
+
+        <button onclick="addToCart('Chaussures sport',75000)">
+
+            Ajouter au panier
+
+        </button>
+
+    </article>
+
+    <article class="product">
+
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Montre">
+
+        <h3>Montre élégante</h3>
+
+        <p>Un style moderne.</p>
+
+        <p class="price">45 000 FBu</p>
+
+        <button onclick="addToCart('Montre élégante',45000)">
+
+            Ajouter au panier
+
+        </button>
+
+    </article>
+
+    <article class="product">
+
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600" alt="Sac à main">
+
+        <h3>Sac à main</h3>
+
+        <p>Beauté et qualité.</p>
+
+        <p class="price">55 000 FBu</p>
+
+        <button onclick="addToCart('Sac à main',55000)">
+
+            Ajouter au panier
+
+        </button>
+
+    </article>
+
+    <article class="product">
+
+        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600" alt="Sneakers">
+
+        <h3>Sneakers</h3>
+
+        <p>Un look exceptionnel.</p>
+
+        <p class="price">85 000 FBu</p>
+
+        <button onclick="addToCart('Sneakers',85000)">
+
+            Ajouter au panier
+
+        </button>
+
+    </article>
+
+</section>
+
+<h2 class="section-title" id="panier">MON PANIER</h2>
+
+<section class="cart">
+
+    <div id="cart-items">
+
+        <p>Votre panier est vide.</p>
+
+    </div>
+
+    <p class="cart-total">
+
+        Total : <span id="total">0</span> FBu
+
+    </p>
+
+    <button class="whatsapp" onclick="orderWhatsApp()">
+
+        Commander sur WhatsApp
+
+    </button>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>CONTACTEZ-NOUS</h2>
+
+    <p>Bienvenue chez RASHIDI BUSINESS.</p>
+
+    <p>Nous sommes à votre service !</p>
+
+</section>
+
+<footer>
+
+    <p>© 2026 RASHIDI BUSINESS</p>
+
+    <p>Tous droits réservés.</p>
+
+    <p>Créé par RASHIDI</p>
+
+</footer>
+
+<script>
+
+let cart = [];
+
+function addToCart(name, price) {
+
+    cart.push({name: name, price: price});
+
+    updateCart();
+
+}
+
+function updateCart() {
+
+    const container = document.getElementById("cart-items");
+
+    const totalElement = document.getElementById("total");
+
+    container.innerHTML = "";
+
+    if (cart.length === 0) {
+
+        container.innerHTML = "<p>Votre panier est vide.</p>";
+
+    }
+
+    let total = 0;
+
+    cart.forEach((item, index) => {
+
+        total += item.price;
+
+        const div = document.createElement("div");
+
+        div.className = "cart-item";
+
+        div.innerHTML =
+
+            "<span>" + item.name + " - " +
+
+            item.price.toLocaleString("fr-FR") + " FBu</span>" +
+
+            "<button onclick='removeItem(" + index + ")'>Retirer</button>";
+
+        container.appendChild(div);
+
+    });
+
+    totalElement.textContent = total.toLocaleString("fr-FR");
+
+}
+
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+function orderWhatsApp() {
+
+    if (cart.length === 0) {
+
+        alert("Votre panier est vide !");
+
+        return;
+
+    }
+
+    // Remplace ce numéro par ton numéro WhatsApp.
+
+    const phone = "257XXXXXXXX";
+
+    let message = "Bonjour RASHIDI BUSINESS ! Je souhaite commander :\n";
+
+    let total = 0;
+
+    cart.forEach(item => {
+
+        message += "- " + item.name + " : " +
+
+            item.price.toLocaleString("fr-FR") + " FBu\n";
+
+        total += item.price;
+
+    });
+
+    message += "\nTotal : " + total.toLocaleString("fr-FR") + " FBu";
+
+    window.open(
+
+        "https://wa.me/" + phone + "?text=" +
+
+        encodeURIComponent(message),
+
+        "_blank"
+
+    );
+
+}
+
+</script>
+
+</body>
+
+</html>
